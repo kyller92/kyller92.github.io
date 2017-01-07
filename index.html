@@ -35,7 +35,15 @@ function fonducarre() {
  setTimeout("location.href = redirectURL;",redirectTime);
 }
 
+function fonduelectric() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
 
+ redirectTime = "1000";
+ redirectURL = "electricloading.html";
+ setTimeout("location.href = redirectURL;",redirectTime);
+}
 </script>
 
 <script src="dist/js/jquery-1.11.2.min.js"></script>
@@ -72,6 +80,8 @@ function fonducarre() {
 							
 							<li><a onclick="fonducarre()" href="#">Stage chez Carré Saveurs</a></li>
 							
+							<li><a onclick="fonduelectric()" href="#">Alternance chez Electric Loading</a></li>
+							
 							<li><a onclick="fonduveille()" href="#">Veille Technologique</a></li>
 							
 							<li><a href="competences.html">Compétences</a></li>
@@ -93,7 +103,7 @@ function fonducarre() {
 		<b style="font-size:30px;"><center>Qui suis-je ?</center></b>
 		</br>
 		<center>Bonjour tout le monde ! </center></br>
-		Je m'appelle Pathé BARRY, actuellement étudiant en BTS SIO, je suis passionné par l'informatique, le jeu vidéo, les mangas et le dessin.
+		Je m'appelle Pathé BARRY, actuellement titulaire d'une Licence Professionnelle PRISM, je suis passionné par l'informatique, le jeu vidéo, les mangas et le dessin.
 		</br>
 		Ici, vous trouverez des informations sur les différents stages que j'ai effectué ainsi que sur mes réalisations 
 		effectuées durant ma formation
@@ -120,7 +130,16 @@ function fonducarre() {
 		<center><b><font color="black">Stage chez Carré Saveurs</center></b></font>
 			<img style="max-width:100%; max-height:100%;" src="img/carresaveurs.png"/>
 		</div>
+	</a>
+
+	<a href="electricloading.html">
+		<div style="float:left; background-color:#35b0e5;
+		width:360px; margin-left:50px; border: 2px solid #FFFFFF; border-radius: 25px;">
+		<center><b><font color="black">Alternance chez Electric-Loading</center></b></font>
+			<img style="max-width:100%; max-height:100%;" src="img/logoel.png"/>
+		</div>
 	</a>	
+	
 	<a href="veilletechnologique.html">
 		<div style="float:left; background-color:grey;
 		width:360px; margin-left:50px; border: 2px solid #FFFFFF; border-radius: 25px;">

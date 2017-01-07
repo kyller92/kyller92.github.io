@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<title>Portfolio de Pathé BARRY</title>
+<head>
+<META charset="UTF-8">
+
+<script type="text/javascript">
+
+function fonducarre() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "carresaveurs.html";
+ setTimeout("location.href = redirectURL;",redirectTime);
+}
+
+function fonduveille() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "veilletechnologique.html";
+ setTimeout("location.href = redirectURL;",redirectTime);
+}
+
+ function fonduaccueil() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "index.html";
+ setTimeout("location.href = redirectURL;",redirectTime);
+ }
+ 
+function charge() {
+$("html body").animate({backgroundColor: "#FFFFFF"}, 1000);
+}
+</script>
+
+<script src="dist/js/jquery-1.11.2.min.js"></script>
+<script src="dist/js/bootstrap.min.js "></script>
+<script src="dist/js/fondu.js "></script>
+<script src="dist/js/jquery-ui.min.js "></script>
+<link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="dist/css/navbar.css" rel="stylesheet" type="text/css">
+	
+</head>
+<body onload="charge()" style="background-color:black";">
+
+<div id="header"></div>
+<!--  Barre de navigation  -->
+
+<div id="barremenu">
+	<div style="background-color:#FFFFFF">
+		<center><img src="img/PathéBARRYBlue2.png" /></center>
+	</div>
+	<nav class="navbar navbar-inverse navbar-static-top center" role="navigation">
+ 
+		<div class="navbar-inner" id="annexe">
+			<div class="optimus">
+				<ul class="nav navbar-nav" >
+							<li><a onclick="fonduaccueil()" href="#">Accueil</a></li>
+								
+							<li><a href="#">Stage chez FDCS Conseil</a></li>
+							
+							<li><a onclick="fonducarre()" href="#">Stage chez Carré Saveurs</a></li>
+							
+							<li><a onclick="fonduelectric()" href="#">Alternance chez Electric Loading</a></li>
+							
+							<li><a onclick="fonduveille()" href="#">Veille Technologique</a></li>
+							
+							<li><a href="competences.html">Compétences</a></li>
+							
+							<li><a href="ppe1.html">Projets Etudiants</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<!--  Fin barre de navigation  -->
+<div id="contenu">
+	<center>
+	<div style=" background-color:#35b0e5; 
+	padding:20px; text-align:justify; width:500px; 
+	margin-left:0px; border: 2px solid #FFFFFF; border-radius: 25px;">
+		<font color="white">
+		<b style="font-size:30px;"><center>ELECTRIC LOADING</center></b>
+		</br>
+		Crée en 2015 par Christophe MATIAS, ELECTRIC LOADING propose, aux particuliers et professionnels, une gamme de bornes de recharge “innovantes et simples” pour véhicules électriques.
+		</br>
+		Aujourd’hui de plus en plus de véhicules électriques sont vendus dans le monde avec des normes et autonomies différentes. 
+		De la même façon que les véhicules thermiques ont besoin de stations essence, les électriques ont besoin de bornes de recharge. 
+		C’est pour cela qu’ ELECTRIC LOADING s’engage dans la conception, la fabrication et l’installation de bornes partout en France en répondant aux contraintes de l’utilisateur, 
+		pour que l’utilisation d’un véhicule électrique ne soit plus une contrainte, mais une réelle avancée vers le bien-être. 
+		</br>
+		</font>
+	</div>
+	</center>
+	<div style="clear:both"/>
+	</br>
+	</br>
+	<div style="margin-left:50px; margin-right:50px;">
+	
+		
+		
+		<div style="float:left; background-color:#6ff0f7;
+			width:200px; margin-left:5px; border: 4px solid #35b0e5;">
+			<img style="max-width:100%; max-height:100%;" src="img/EcranAccueilPetit.png"/>
+		</div>
+		
+		<div style="float:right; background-color:#6ff0f7;
+			width:200px; margin-left:5px; border: 4px solid #35b0e5;">
+			<img style="max-width:100%; max-height:100%;" src="img/EcranMenuPetit.png"/>
+		</div>
+		
+	
+	<b style="font-size:30px;"><center>Le projet</center></b>
+	</br>
+	<center>
+	<div style="text-align:justify;">
+	<center>
+	Electric Loading souhaitait mettre à disposition des bornes pour véhicules rechargeables. Dans un premier temps, un site web devait être crée.
+		</br>	
+		</br>	
+		Le projet consistait à concevoir un site web permettant d’afficher les actualités de l'entreprise ainsi que de voir les informations sur cette dernière.
+		Il devait également être possible de s'inscrire à la version alpha de l'application mobile "E-Mia Mobile". Par ailleurs, nous allions également concevoir cette
+		application.
+		La réalisation de ce projet était demandé par le directeur de l’entreprise Christophe MATIAS et j'étais 
+		assisté par un binôme lui aussi en alternance.
+		</center>
+	</div>
+		</br>	
+		</br>	
+		</br>	
+		</br>	
+	
+	
+	Le site et l'application sont accessibles > <a href="http://electric-loading.com/">ici</a> <
+	</br>	</br>	</br> </br>
+	
+	
+	
+	</br>
+			<b style="font-size:30px;">Mission 1 : </b></br>
+			<b>Contexte :  </b></br>
+			- Conception d'un site web en PHP / MySql  </br>
+			- Equipe de 2 personnes </br>
+			</br>
+			<b>Activité :</b> </br>   
+			- Développement Full-Stack en HTML5/CSS3/PHP5 avec Bootstrap  </br>
+			- Mise en place de la base de données </br>
+			</br>
+			<b>Environnement technique :</b>  </br>
+			- PHP5  </br>
+			- HTML5 / CSS3 </br>
+			- Bootstrap </br>
+			- Javascript  </br>
+			- MySql  </br>
+			- Système d’exploitation : Windows </br>
+			- Github  </br> </br>
+ 
+  
+			<b style="font-size:30px;">Mission 2 :</b></br>
+			<b>Contexte :   </b></br>
+			- Conception d'une application mobile Android   </br>
+			- Equipe de 2 personnes 
+			</br>
+			Activité :  </br>
+			- Développement d’une application avec Android Studio  </br>
+			- Mise en place de la base de données </br>
+			</br>
+			Environnement technique :  </br>
+			- Java   </br>
+			- MySql  </br>
+			- Android Studio  </br>
+			- Système d’exploitation : Windows / Android  </br>
+			- Github 
+			</br></br>
+ 
+	</div>
+	</center>
+</div>
+</br>	
+		</br>	</br>	
+		</br>	
+</body>
+</html>
