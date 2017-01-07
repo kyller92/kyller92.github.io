@@ -56,7 +56,7 @@ $("html body").animate({backgroundColor: "#d8e1ff"}, 1000);
 
 <div id="barremenu">
 	<div style="background-color:#cbd1e7">
-		<center><img src="img/PathéBARRYBlue2.PNG" /></center>
+		<center><img src="img/PathéBARRYBlue2.png" /></center>
 	</div>
 	<nav class="navbar navbar-inverse navbar-static-top center" role="navigation">
  

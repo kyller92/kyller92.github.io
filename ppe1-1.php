@@ -66,7 +66,7 @@ function charge() {
 
 <div id="barremenu">
 	<div style="background-color:#DFF2FF;">
-		<center><img src="img/PathéBARRYBlue2.PNG" /></center>
+		<center><img src="img/PathéBARRYBlue2.png" /></center>
 	</div>
 	<nav class="navbar navbar-inverse navbar-static-top center" role="navigation">
  
