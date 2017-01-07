@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<title>Portfolio de Pathé BARRY</title>
+<head>
+<META charset="UTF-8">
+
+<script type="text/javascript">
+function fondufdcs() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "fdcsconseil.php";
+ setTimeout("location.href = redirectURL;",redirectTime);
+}
+
+function fonduveille() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "veilletechnologique.php";
+ setTimeout("location.href = redirectURL;",redirectTime);
+ }
+ 
+ function fonduaccueil() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "index.php";
+ setTimeout("location.href = redirectURL;",redirectTime);
+ }
+ function fonducarre() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "carresaveurs.php";
+ setTimeout("location.href = redirectURL;",redirectTime);
+}
+
+function charge() {
+ $("html body").animate({backgroundColor: "#DFF2FF"}, 1000);
+ }
+
+</script>
+
+<script src="dist/js/jquery-1.11.2.min.js"></script>
+<script src="dist/js/bootstrap.min.js "></script>
+<script src="dist/js/fondu.js "></script>
+<script src="dist/js/jquery-ui.min.js "></script>
+<link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="dist/css/navbar.css" rel="stylesheet" type="text/css">
+	
+</head>
+<body onload="charge()" style="background-color:#000000;">
+
+<div id="header"></div>
+<!--  Barre de navigation  -->
+
+<div id="barremenu">
+	<div style="background-color:#DFF2FF;">
+		<center><img src="img/PathéBARRY2.PNG" /></center>
+	</div>
+	<nav class="navbar navbar-inverse navbar-static-top center" role="navigation">
+ 
+		<div class="navbar-inner" id="annexe">
+			<div class="optimus">
+				<ul class="nav navbar-nav" >
+							<li><a onclick="fonduaccueil()" href="#">Accueil</a></li>
+								
+							<li><a onclick="fondufdcs()" href="#" >Stage chez FDCS Conseil</a></li>
+							
+							<li><a onclick="fonducarre()" href="#">Stage chez Carré Saveurs</a></li>
+							
+							<li><a onclick="fonduveille()" href="#">Veille Technologique</a></li>
+							
+							<li><a href="competences.php">Compétences</a></li>
+							
+							<li><a href="ppe1.php">Projets Personnels</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<!--  Fin barre de navigation  -->
+<div id="contenu">
+	
+	</br>
+	</br>
+	<div style="margin-left:10px; margin-right:50px;">
+
+	
+	
+	<b style="font-size:30px;"><center>Les projets</center></b>
+	</br>
+		
+	
+		<a href="ppe1-1.php"><b style="font-size:20px;">PPE Village Vacances Alpes</b></a>
+		<b>
+		</br>
+		<u>Contexte : </u> </br> Ce projet a pour origine le contexte VVA (Village Vacances Alpes)
+			</br></br>	
+		
+		</div>
+		
+		<div style="margin-left:10px; margin-right:50px;">
+	
+		<a href="ppe2.php"><b style="font-size:20px;">PPE Village Vacances Alpes - Espace Jeu</b></a>
+		<b>
+		</br>
+		<u>Contexte : </u> </br> Ce projet a pour origine le contexte VVA (Village Vacances Alpes)
+			</br></br>	
+			
+		</div>
+		
+		<div style="margin-left:10px; margin-right:50px;">
+	
+		<a href="ppegsb.php"><b style="font-size:20px;">PPE Galaxy Swiss Bourdin</b></a>
+		<b>
+		</br>
+		<u>Contexte : </u> </br> Ce projet a pour origine le contexte VVA (Village Vacances Alpes)
+			</br></br>	
+			
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>

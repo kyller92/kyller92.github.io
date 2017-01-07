@@ -1,0 +1,9 @@
+.collapse {
+	border-collapse: collapse;
+	border-style: double;
+	border: 1px solid white;
+}
+
+td{
+	border-style: double;
+}

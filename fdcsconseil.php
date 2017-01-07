@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+<title>Portfolio de Pathé BARRY</title>
+<head>
+<META charset="UTF-8">
+
+<script type="text/javascript">
+
+function fonducarre() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "carresaveurs.php";
+ setTimeout("location.href = redirectURL;",redirectTime);
+}
+
+function fonduveille() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "veilletechnologique.php";
+ setTimeout("location.href = redirectURL;",redirectTime);
+}
+
+ function fonduaccueil() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "index.php";
+ setTimeout("location.href = redirectURL;",redirectTime);
+ }
+ 
+function charge() {
+$("html body").animate({backgroundColor: "#d8e1ff"}, 1000);
+}
+</script>
+
+<script src="dist/js/jquery-1.11.2.min.js"></script>
+<script src="dist/js/bootstrap.min.js "></script>
+<script src="dist/js/fondu.js "></script>
+<script src="dist/js/jquery-ui.min.js "></script>
+<link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="dist/css/navbar.css" rel="stylesheet" type="text/css">
+	
+</head>
+<body onload="charge()" style="background-color:black";">
+
+<div id="header"></div>
+<!--  Barre de navigation  -->
+
+<div id="barremenu">
+	<div style="background-color:#cbd1e7">
+		<center><img src="img/PathéBARRYBlue2.PNG" /></center>
+	</div>
+	<nav class="navbar navbar-inverse navbar-static-top center" role="navigation">
+ 
+		<div class="navbar-inner" id="annexe">
+			<div class="optimus">
+				<ul class="nav navbar-nav" >
+							<li><a onclick="fonduaccueil()" href="#">Accueil</a></li>
+								
+							<li><a href="#">Stage chez FDCS Conseil</a></li>
+							
+							<li><a onclick="fonducarre()" href="#">Stage chez Carré Saveurs</a></li>
+							
+							<li><a onclick="fonduveille()" href="#">Veille Technologique</a></li>
+							
+							<li><a href="competences.php">Compétences</a></li>
+							
+							<li><a href="ppe1.php">Projets Personnels</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<!--  Fin barre de navigation  -->
+<div id="contenu">
+	<center>
+	<div style=" background-color:#557cfc; 
+	padding:20px; text-align:justify; width:500px; 
+	margin-left:50px; border: 2px solid #FFFFFF; border-radius: 25px;">
+		<font color="white">
+		<b style="font-size:30px;"><center>FDCS Conseil</center></b>
+		</br>
+		L’entreprise FDCS Conseil, dont son siège social est situé à Sartrouville, 
+		est dirigée par Françoise Delcroix. Elle possède <b>quatre centres </b>situés à Sartrouville, 
+		Paris, Pontoise et Epone. 
+		</br>
+		Cette entreprise est spécialisée dans <b>l’accompagnement et 
+		le conseil des particuliers et des entreprises.</b> Elle assiste les entreprises lors de la réorganisation des ressources humaines, 
+		lors de la création d’entreprise, le coaching, la formation, la mise en place d’un bilan de compétences et l’orientation scolaire. 
+		</br>
+		Elle a été fondée en 2007 et possède un petit effectif.
+		</font>
+	</div>
+	</center>
+	<div style="clear:both"/>
+	</br>
+	</br>
+	<div style="margin-left:50px; margin-right:50px;">
+	
+		<div style="float:left; background-color:#6ff0f7;
+			width:200px; margin-left:5px; border: 4px solid #FFFFFF;">
+			<img style="max-width:100%; max-height:100%;" src="img/fdcs.jpg"/>
+		</div>
+		
+	<b style="font-size:30px;"><center>Le projet</center></b>
+	</br>
+	FDCS Conseil concevait des questionnaires pour les entreprises afin que les salariés puissent <b>s'auto-évaluer et 
+		être évalués par leurs proches</b>
+		ou par leurs supérieurs et subordonnés hiérarchiques.
+		Ces évaluations s'effectuant par papier, FDCS Conseil ainsi que les autres entreprises considéraient ces dernières comme une succession 
+		de processus longs et relativement compliqués à gérer. 
+		</br>	
+		</br>	
+		Le projet consistait à concevoir une application web permettant d’évaluer les salariés, au niveau professionnel et social, 
+		d’une entreprise directement sur Internet à l’aide de questionnaires conçus et adaptés en fonction du statut du salarié 
+		(Cadre, cadre supérieur, agents de maîtrise ou employés) qui est inscrit par la directrice. 
+		La réalisation de ce projet était demandée par la directrice de l’entreprise Françoise Delcroix et j'étais 
+		assisté par un binôme lui aussi stagiaire.
+		</br>	
+		</br>	
+		</br>	
+		</br>	
+	<div style="text-align:left">
+	
+	L'application est accessible > <a href="http://evaluation360-fdcs.fr/public/index.php">ici</a> <
+	</br>	</br>	
+	<b style="font-size:30px;">Réalisations</b>
+	</br>	
+	<b>
+		- Conception d'une application web
+		</br>
+		- PHP / MySql
+		</br>
+		- Utilisation du CMS Pimalys
+	</b>
+	</div>
+	</div>
+</div>
+</br>	
+		</br>	</br>	
+		</br>	
+</body>
+</html>

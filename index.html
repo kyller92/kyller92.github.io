@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<title>Portfolio de Pathé BARRY</title>
+<head>
+<META charset="UTF-8">
+
+<script type="text/javascript">
+function fondufdcs() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "fdcsconseil.php";
+ setTimeout("location.href = redirectURL;",redirectTime);
+}
+
+function fonduveille() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "veilletechnologique.php";
+ setTimeout("location.href = redirectURL;",redirectTime);
+ }
+
+function fonducarre() {
+ $("#contenu").animate({opacity: "hide"},"slow");
+ $("#barremenu").animate({opacity: "hide"},"slow");
+ $("html body").animate({backgroundColor: "#000000"}, 1000);
+
+ redirectTime = "1000";
+ redirectURL = "carresaveurs.php";
+ setTimeout("location.href = redirectURL;",redirectTime);
+}
+
+
+</script>
+
+<script src="dist/js/jquery-1.11.2.min.js"></script>
+<script src="dist/js/bootstrap.min.js "></script>
+<script src="dist/js/startAnim.js "></script>
+<script src="dist/js/jquery-ui.min.js "></script>
+<link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="dist/css/navbar.css" rel="stylesheet" type="text/css">
+	
+</head>
+<body style="background-color:#000000;">
+
+<div id="header"><center>
+<img class="resize" src="img/logo.PNG" />
+</center>
+</div>
+
+<div id="header"></div>
+
+<!--  Barre de navigation  -->
+
+<div id="barremenu">
+	<div style="background-color:#b74545;">
+		<center><img src="img/PathéBARRY2.PNG" /></center>
+	</div>
+	<nav class="navbar navbar-inverse navbar-static-top center" role="navigation">
+ 
+		<div class="navbar-inner" id="annexe">
+			<div class="optimus">
+				<ul class="nav navbar-nav" >
+							<li><a href="index.php">Accueil</a></li>
+								
+							<li><a onclick="fondufdcs()" href="#">Stage chez FDCS Conseil</a></li>
+							
+							<li><a onclick="fonducarre()" href="#">Stage chez Carré Saveurs</a></li>
+							
+							<li><a onclick="fonduveille()" href="#">Veille Technologique</a></li>
+							
+							<li><a href="competences.php">Compétences</a></li>
+							
+							<li><a href="ppe1.php">Projets Personnels</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<!--  Fin barre de navigation  -->
+<div id="contenu">
+	<center>
+	<div style=" background-color:#751717; 
+	padding:20px; text-align:justify; width:500px; 
+	margin-left:50px; border: 2px solid #FFFFFF; border-radius: 25px;">
+		<font color="white">
+		<b style="font-size:30px;"><center>Qui suis-je ?</center></b>
+		</br>
+		<center>Bonjour tout le monde ! </center></br>
+		Je m'appelle Pathé BARRY, actuellement étudiant en BTS SIO, je suis passionné par l'informatique, le jeu vidéo, les mangas et le dessin.
+		</br>
+		Ici, vous trouverez des informations sur les différents stages que j'ai effectué ainsi que sur mes réalisations 
+		effectuées durant ma formation
+		</br>
+		</br>
+		<center>Profitez-bien de votre séjour sur mon site !</center>
+		</font>
+	</div>
+	</center>
+	<div style="clear:both"/>
+	</br>
+	</br>
+	<a href="fdcsconseil.php">
+		<div style="float:left; background-color:#6ff0f7;
+		width:360px; margin-left:50px; border: 2px solid #FFFFFF; border-radius: 25px;">
+		<center><b><font color="black">Stage chez FDCS Conseil</center></b></font>
+			<img style="max-width:100%; max-height:100%;" src="img/fdcsconseil2.PNG"/>
+		</div>
+	</a>
+	
+	<a href="carresaveurs.php">
+		<div style="float:left; background-color:#F781D8;
+		width:360px; margin-left:50px; border: 2px solid #FFFFFF; border-radius: 25px;">
+		<center><b><font color="black">Stage chez Carré Saveurs</center></b></font>
+			<img style="max-width:100%; max-height:100%;" src="img/carresaveurs.PNG"/>
+		</div>
+	</a>	
+	<a href="veilletechnologique.php">
+		<div style="float:left; background-color:grey;
+		width:360px; margin-left:50px; border: 2px solid #FFFFFF; border-radius: 25px;">
+		<center><b><font color="black">Veille Technologique</center></b></font>
+			<img style="max-width:100%; max-height:100%;" src="img/veille.PNG"/>
+		</div>
+	</a>
+</div>
+</body>
+</html>
